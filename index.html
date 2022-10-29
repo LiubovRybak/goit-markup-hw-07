@@ -18,39 +18,41 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-navigation">
-          <a href="./index.html" lang="en" class="header-logo link"
-            >Web<span class="studio">Studio</span></a
+      <div class="container header__container">
+        <nav class="navigation header__navigation">
+          <a href="./index.html" lang="en" class="navigation__logo link"
+            >Web<span class="navigation__studio">Studio</span></a
           >
-          <ul class="header-navigation list">
-            <li class="header-navigation-item">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
               <a
                 href="./index.html"
-                class="header-text header-studio link current"
+                class="navigation__text header__studio link current"
                 >Студія</a
               >
             </li>
-            <li class="header-navigation-item">
+            <li class="navigation__item">
               <a
                 href="./portfolio.html"
-                class="header-text header-portfolio link"
+                class="navigation__text header__portfolio link"
                 >Портфоліо</a
               >
             </li>
-            <li class="header-navigation-item">
-              <a href="#" class="header-text header-contact link">Контакти</a>
+            <li class="navigation__item">
+              <a href="#" class="navigation__text header__contact link"
+                >Контакти</a
+              >
             </li>
           </ul>
         </nav>
-        <ul class="header-list list">
-          <li class="header-item">
+        <ul class="header__list list">
+          <li class="header__item">
             <a
-              class="header-mail link"
+              class="header__mail link"
               href="mailto:info@devstudio.com"
               lang="en"
             >
@@ -60,8 +62,8 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
-            <a class="header-tel link" href="tel:+380961111111">
+          <li class="header__item">
+            <a class="header__tel link" href="tel:+380961111111">
               <svg class="phone" width="10" height="16">
                 <use href="./img/symbol-defs.svg#smartphone-header"></use>
               </svg>
@@ -73,60 +75,62 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container container-hero">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button" data-modal-open>
-            Замовити послугу
-          </button>
+        <div class="hero__container">
+          <div class="container hero__box">
+            <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+            <button type="button" class="hero__button" data-modal-open>
+              Замовити послугу
+            </button>
+          </div>
         </div>
       </section>
       <section class="benefits">
-        <div class="container container-benefits">
+        <div class="container benefits__container">
           <h2 class="visually-hidden">Наші особливості</h2>
-          <ul class="benefit-list list">
-            <li class="benefit-item">
-              <div class="container-benefit-item">
+          <ul class="benefit__list list">
+            <li class="benefit__item">
+              <div class="picture benefit__picture">
                 <svg wight="70" height="70">
                   <use href="./img/symbol-defs.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefit-title">Увага до деталей</h3>
-              <p class="benefit-text">
+              <h3 class="benefit__title">Увага до деталей</h3>
+              <p class="benefit__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="benefit-item">
-              <div class="container-benefit-item">
+            <li class="benefit__item">
+              <div class="picture benefit__picture">
                 <svg wight="70" height="70">
                   <use href="./img/symbol-defs.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="benefit-title">Пунктуальність</h3>
-              <p class="benefit-text">
+              <h3 class="benefit__title">Пунктуальність</h3>
+              <p class="benefit__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="benefit-item">
-              <div class="container-benefit-item">
+            <li class="benefit__item">
+              <div class="picture benefit__picture">
                 <svg wight="70" height="70">
                   <use href="./img/symbol-defs.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefit-title">Планування</h3>
-              <p class="benefit-text">
+              <h3 class="benefit__title">Планування</h3>
+              <p class="benefit__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="benefit-item">
-              <div class="container-benefit-item">
+            <li class="benefit__item">
+              <div class="picture benefit__picture">
                 <svg wight="70" height="70">
                   <use href="./img/symbol-defs.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefit-title">Сучаснітехнології</h3>
-              <p class="benefit-text">
+              <h3 class="benefit__title">Сучаснітехнології</h3>
+              <p class="benefit__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -135,35 +139,35 @@
         </div>
       </section>
       <section class="about">
-        <div class="container container-about">
-          <h2 class="about-top-text">Чим ми займаємося</h2>
-          <ul class="about-list list">
-            <li class="about-item">
+        <div class="container about__container">
+          <h2 class="about__text">Чим ми займаємося</h2>
+          <ul class="about__list list">
+            <li class="about__item">
               <img
                 src="./img/img2.jpg"
                 alt="телефон"
                 width="370"
                 height="294"
               />
-              <p class="label">Десктопні додатки</p>
+              <p class="about__label">Десктопні додатки</p>
             </li>
-            <li class="about-item">
+            <li class="about__item">
               <img
                 src="./img/img1.jpg"
                 alt="планшет"
                 width="370"
                 height="294"
               />
-              <p class="label">Мобільні додатки</p>
+              <p class="about__label">Мобільні додатки</p>
             </li>
-            <li class="about-item">
+            <li class="about__item">
               <img
                 src="./img/img3.jpg"
                 alt="кольорова палітра"
                 width="370"
                 height="294"
               />
-              <p class="label">Дизайнерські рішення</p>
+              <p class="about__label">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
